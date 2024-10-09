@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Str;
 use RedisException;
+use Sentry\Laravel\Integration;
 use Throwable;
 
 class Handler
@@ -26,7 +27,7 @@ class Handler
             self::addContext();
         }
 
-        App::make('sentry')->captureException($exception);
+        Integration::captureUnhandledException($exception);
 
         if (Auth::check() && App::isProduction()) {
             self::storeEventId();
