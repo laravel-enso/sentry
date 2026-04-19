@@ -1,6 +1,6 @@
 {
     "name": "laravel-enso/sentry",
-    "description": "Main requirement & dependency aggregator for Laravel Enso",
+    "description": "Sentry exception handling for Laravel Enso",
     "keywords": [
         "laravel-enso",
         "sentry",
