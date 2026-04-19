@@ -38,7 +38,7 @@ class Handler
 
     public static function eventId(): ?string
     {
-        $events = Cache::get(self::UserEventKey);
+        $events = Cache::get(self::UserEventKey, []);
         $eventId = $events[self::user()?->id] ?? null;
 
         return $eventId;
