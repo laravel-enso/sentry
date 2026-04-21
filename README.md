@@ -135,6 +135,10 @@ Framework dependency:
 
 - [`laravel/framework`](https://github.com/laravel/framework) [↗](https://github.com/laravel/framework)
 
+Companion frontend package:
+
+- [`@enso-ui/sentry`](https://docs.laravel-enso.com/frontend/sentry.html) [↗](https://github.com/enso-ui/sentry)
+
 ## Contributions
 
 are welcome. Pull requests are great, but issues are good too.
